@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.pad {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 2%;
+}
+
+label {
+  font-size: 13px;
+}
+
+label.b {
+  padding-right: 50px;
+}
+
+.button {
+  height: 25px;
+  background-color: rgba(27, 81, 135, 0.9);
+  border: 0px;
+  border-radius: 5px;
+  width: 70px;
+  color: white;
+  margin-left: 15%;
+}
+
+.title {
+  box-sizing: border-box;
+  background-color: rgba(27, 81, 135, 0.9);
+  color: white;
+  padding: 8px 20px;
+  height: 9%;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 75%;
+  box-sizing: border-box;
+  border: 2px solid rgba(27, 81, 135, 0.9);
+  border-radius: 5px;
+}
+
+.form-container {
+  padding: 15px
+}
+
+input[placeholder] {
+  width: 75%;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#hobbies {
+  display: flex;
+}
+
+.space-container {
+  margin-bottom: 2%;
+}
+
+table,
+td,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+}
+
+table {
+  margin: 10px;
+}
+
+@media screen and (max-width:1000px) {
+  .pad {
+    text-align: left;
+    width: 50px;
+  }
+
+  label[for="dob"] {
+    width: 100px;
+  }
+
+  input[placeholder] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./src/index.css" />
+
+    <script type="module" src="./src/main.js"></script>
+  </head>
+
+  <body>
+    <div class="heading"><h2>Employee</h2></div>
+    <div class="container">
+      <div class="title">Add Employee</div>
+      <div class="form-container">
+        <form class="form1" id="form1">
+          <div class="space-container">
+            <label class="pad" for="name"><b>Name:</b></label>
+            <input
+              type="text"
+              id="name"
+              class="Name"
+              name="name"
+              placeholder="Enter Name"
+              pattern="^[a-zA-Z0-9]{4,20}$"
+              required
+            />
+          </div>
+          <div class="space-container">
+            <label class="pad"><b>Gender:</b></label>
+            <label for="male">
+              <input type="radio" class="gender" id="male" value="Male" name="opt" checked />Male
+            </label>
+            <label for="female">
+              <input type="radio" class="gender" id="female" value="Female" name="opt" />Female
+            </label>
+          </div>
+          <div class="space-container">
+            <label class="pad" for="dob"><b>Date of Birth:</b></label>
+            <input type="date" id="dob" class="DOB" max="" required />
+          </div>
+          <div class="space-container">
+            <label class="pad" for="mail"><b>Email:</b></label>
+            <input
+              type="email"
+              id="email"
+              class="Email"
+              placeholder="Enter Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </div>
+          <div class="space-container">
+            <label class="pad" for="phone"><b>Phone:</b></label>
+            <input type="tel" id="phone" class="Phone" placeholder="Enter Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" />
+          </div>
+          <div id="hobbies" class="space-container">
+            <label class="pad"><b>Hobbies:</b></label>
+            <div class="hobbies-options">
+              <input type="checkbox" id="cricket" class="hobbies" name="cricket" value="Cricket" />
+              <label for="cricket">Cricket</label><br />
+              <input type="checkbox" id="chess" class="hobbies" name="chess" value="Chess" />
+              <label for="chess">Chess</label><br />
+              <input type="checkbox" id="music" class="hobbies" name="music" value="Music" />
+              <label for="music">Music</label><br />
+            </div>
+          </div>
+          <button id="btn" type="submit" class="button" onsubmit="storeData()">Submit</button>
+          <button id="reset-btn" type="reset" class="button">Reset</button>
+        </form>
+      </div>
+    </div>
+    <div class="container" id="table-area">
+      <div class="title">Display</div>
+      <table id="form-table" style="width: 96%">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Hobbies</th>
+            <th>Delete</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
